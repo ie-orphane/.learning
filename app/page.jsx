@@ -1,22 +1,5 @@
-import Image from "next/image";
 import React from "react";
-import Icon from "./components/Icon";
-
-const Svg = ({ children, ...rest }) => {
-  return (
-    <svg
-      fill="none"
-      stroke="#000"
-      strokeWidth="0.25"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 100 100"
-      className="size-full group-hover:scale-125 duration-[325ms]"
-      {...rest}
-    >
-      {children}
-    </svg>
-  );
-};
+import Svg from "@/components/Svg";
 
 const Card = ({ classes, title, icon }) => {
   return (
@@ -36,7 +19,7 @@ const Card = ({ classes, title, icon }) => {
   );
 };
 
-export default function Home() {
+export default function HomePage() {
   return (
     <main className="bg-white h-[calc(100vh-2rem)] flex items-center justify-center">
       <div className="flex size-[75%] h-[87.5%] gap-10">
@@ -61,7 +44,7 @@ export default function Home() {
           <div className="flex gap-10 h-[62.5%]">
             {[
               {
-                title: "bash",
+                title: "shell",
                 bg: "bg-[#fbcfe8]",
                 icon: (
                   <Svg viewBox="-16 0 256 256">
