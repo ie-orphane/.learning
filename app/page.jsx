@@ -1,5 +1,6 @@
 import React from "react";
 import Svg from "@/components/Svg";
+import AuthButton from "@/components/AuthButton";
 
 const Card = ({ classes, title, icon }) => {
   return (
@@ -125,9 +126,7 @@ export default function HomePage() {
               Beyond the Binary. <br /> Craft Powerful Apps with Code.
             </h1>
 
-            <button className="button border-2 border-transparent text-white bg-black hover:bg-transparent hover:text-black hover:border-black font-medium w-fit px-12 py-3 hover:translate-x-1 hover:-translate-y-1 active:translate-x-0 active:translate-y-0">
-              Start now
-            </button>
+            <AuthButton>Start now</AuthButton>
           </div>
         </div>
       </div>
